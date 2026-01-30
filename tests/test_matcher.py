@@ -23,7 +23,8 @@ def test_match_closest_basic():
     m = match_closest(a, b)
 
     assert m[0]["b_index"] == 0  # 0 is closer to 1 than 3
-    assert m[1]["b_index"] == 0  # 2 is closer to 1 than 3? Actually 1 degree vs 1 degree tie to 1 and 3 -> pick first min
+    # 2 is equidistant to 1 and 3 (1 degree each), tie-breaker picks first minimum
+    assert m[1]["b_index"] == 0
     assert m[0]["distance_m"] > 0
     assert m[1]["distance_m"] > 0
 
