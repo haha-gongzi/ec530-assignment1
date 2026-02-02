@@ -59,7 +59,7 @@ def closest_airport(
     best_dist: float = float("inf")
 
     for ap in airports:
-        d = haversine_distance_m(lat, lon, ap.lat, ap.lon)
+        d = haversine_distance_m((lat, lon), (ap.lat, ap.lon))
         if d < best_dist:
             best_dist = d
             best = ap
