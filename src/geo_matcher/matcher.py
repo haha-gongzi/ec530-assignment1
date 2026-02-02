@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from math import atan2, cos, radians, sin, sqrt
-from typing import Iterable, List, Sequence, Tuple, Dict, Any
+from typing import List, Sequence, Tuple, Dict, Any
 
 
 # Mean Earth radius in meters (IUGG recommended mean radius)
